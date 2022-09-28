@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sembako_paylater/Home.dart';
+import 'package:sembako_paylater/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Mission 1'),
+      home: const Home(title: 'Mission 1'),
     );
   }
 }
