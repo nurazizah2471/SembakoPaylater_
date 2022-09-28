@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key, required this.title});
+  const Home
+
+  ({super.key, required this.title});
 
   final String title;
 
@@ -60,7 +62,7 @@ class _HomeState extends State<Home> {
                     flex: 1,
                     child: Container(
                       margin: EdgeInsets.only(
-                        top: 10.0,
+                        top: 7.0,
                         left: 5.0,
                         right: 5.0,
                       ),
@@ -72,7 +74,7 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                      AssetImage('asset_images/sembako2.jpg'),
+                                  AssetImage('asset_images/sembako2.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.all(
@@ -82,7 +84,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           SizedBox(
-                            width: 6,
+                            width: 7,
                           ),
                           Flexible(
                             flex: 1,
@@ -90,7 +92,7 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                      AssetImage('asset_images/sembako3.jpg'),
+                                  AssetImage('asset_images/sembako3.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.all(
@@ -100,7 +102,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           SizedBox(
-                            width: 6,
+                            width: 7,
                           ),
                           Flexible(
                             flex: 1,
@@ -108,7 +110,7 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                      AssetImage('asset_images/sembako4.jpg'),
+                                  AssetImage('asset_images/sembako4.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.all(
@@ -118,7 +120,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           SizedBox(
-                            width: 6,
+                            width: 7,
                           ),
                           Flexible(
                             flex: 1,
@@ -126,7 +128,7 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                      AssetImage('asset_images/sembako5.jpg'),
+                                  AssetImage('asset_images/sembako5.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.all(
@@ -149,7 +151,7 @@ class _HomeState extends State<Home> {
                         children: <Widget>[
                           Center(
                             child: Text(
-                              "Keterangan Produk",
+                              "Usaha Sembako Bu Yuli",
                               style: TextStyle(
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold,
@@ -164,12 +166,11 @@ class _HomeState extends State<Home> {
                               children: <Widget>[
                                 ListTile(
                                   title: Text(
-                                    "Indomie adalah merek mi instan yang diproduksi oleh "
-                                    "Indofood CBP, anak perusahaan Indofood di Indonesia. "
-                                    "Indofood sendiri merupakan produsen mi instan terbesar "
-                                    "di dunia, dengan 16 pabrik, 15 miliar paket Indomie "
-                                    "diproduksi setiap tahun. Indomie juga diekspor ke lebih "
-                                    "dari 60 negara di dunia.",
+                                    "Tersedia: minyak, gula putih, gula merah, "
+                                        "mie instan kemasan, beras, telur, tepung, sagu,bumbu dapur, "
+                                        "margarin, susu, minyak tanah, gas elpiji, teh, kopi, "
+                                        "pop ice, snack, roti, tali rapia, minuman dingin, kerupuk kulit, "
+                                        "sirup, mentega, permen, ikan sarden kaleng, es krim, es batu.",
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w500,
@@ -181,12 +182,12 @@ class _HomeState extends State<Home> {
                                 ),
                                 ListTile(
                                   title: Text(
-                                    "Sedangkan Mie Sedaap adalah merek mi instan yang "
-                                    "diproduksi oleh Wings Food. Produk mi instan ini "
-                                    "diluncurkan pada tahun 2003 dan saat ini berada di posisi "
-                                    "mi instan terpopuler kedua di Indonesia. Produk ini "
-                                    "diklaim sebagai satu-satunya mi instan di pasaran yang "
-                                    "memiliki sertifikat ISO 22000.",
+                                    "Aturan: Tidak bisa checkout barang apabila tagihan melebihi "
+                                        "1.000.000. Tagihan bisa dicicil per hari, per bulan, dan per tahun. "
+                                        "Maksimum checkout 10 barang dengan jenis yang sama dalam 1 kali check out. "
+                                        "Jika terdapat kerusakan pada barang, "
+                                        "barang bisa dikembalikan maksimal 3 hari setelah barang diterima. "
+                                        "Hanya akun yang telah terverifikasi yang dapat check out barang dalam aplikasi ini.",
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w500,
@@ -198,10 +199,10 @@ class _HomeState extends State<Home> {
                                 ),
                                 ListTile(
                                   title: Text(
-                                    "Bertepatan pada tahun 2019, salah satu mi instan "
-                                    "produksi Indonesia yaitu Indomie Barbeque Chicken "
-                                    "dinobatkan sebagai mie instan terbaik dan paling enak "
-                                    "di dunia.",
+                                    "Besar bunga sebesar 5% dan diawasi oleh OJK. "
+                                        "Kontak Pembeli: 988854433322455 "
+                                        "Terima pesan antar. Pastikan lokasi anda tidak jauh dengan lokasi usaha "
+                                        "untuk menghindari kenaikan harga ongkir yang harus anda bayar.",
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w500,
