@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class Home extends StatefulWidget {
-  const Home
-
-  ({super.key, required this.title});
+  const Home({super.key, required this.title});
 
   final String title;
 
@@ -75,7 +73,7 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                  AssetImage('asset_images/sembako2.jpg'),
+                                      AssetImage('asset_images/sembako2.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.all(
@@ -93,7 +91,7 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                  AssetImage('asset_images/sembako3.jpg'),
+                                      AssetImage('asset_images/sembako3.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.all(
@@ -111,7 +109,7 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                  AssetImage('asset_images/sembako4.jpg'),
+                                      AssetImage('asset_images/sembako4.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.all(
@@ -129,7 +127,7 @@ class _HomeState extends State<Home> {
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   image:
-                                  AssetImage('asset_images/sembako5.jpg'),
+                                      AssetImage('asset_images/sembako5.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.all(
@@ -168,10 +166,10 @@ class _HomeState extends State<Home> {
                                 ListTile(
                                   title: Text(
                                     "Tersedia: minyak, gula putih, gula merah, "
-                                        "mie instan kemasan, beras, telur, tepung, sagu, bumbu dapur, "
-                                        "margarin, susu, minyak tanah, gas elpiji, teh, kopi, "
-                                        "pop ice, snack, roti, tali rapia, minuman dingin, kerupuk kulit, "
-                                        "sirup, mentega, permen, ikan sarden kaleng, es krim, es batu.",
+                                    "mie instan kemasan, beras, telur, tepung, sagu, bumbu dapur, "
+                                    "margarin, susu, minyak tanah, gas elpiji, teh, kopi, "
+                                    "pop ice, snack, roti, tali rapia, minuman dingin, kerupuk kulit, "
+                                    "sirup, mentega, permen, ikan sarden kaleng, es krim, es batu.",
                                     style: TextStyle(
                                       fontFamily: 'Yantramanav',
                                     ),
@@ -183,11 +181,11 @@ class _HomeState extends State<Home> {
                                 ListTile(
                                   title: Text(
                                     "Aturan: Tidak bisa checkout barang apabila tagihan melebihi "
-                                        "1.000.000. Tagihan bisa dicicil per hari, per bulan, dan per tahun. "
-                                        "Maksimum checkout 10 barang dengan jenis yang sama dalam 1 kali check out. "
-                                        "Jika terdapat kerusakan pada barang, "
-                                        "barang bisa dikembalikan maksimal 3 hari setelah barang diterima. "
-                                        "Hanya akun yang telah terverifikasi yang dapat check out barang dalam aplikasi ini.",
+                                    "1.000.000. Tagihan bisa dicicil per hari, per bulan, dan per tahun. "
+                                    "Maksimum checkout 10 barang dengan jenis yang sama dalam 1 kali check out. "
+                                    "Jika terdapat kerusakan pada barang, "
+                                    "barang bisa dikembalikan maksimal 3 hari setelah barang diterima. "
+                                    "Hanya akun yang telah terverifikasi yang dapat check out barang dalam aplikasi ini.",
                                     style: TextStyle(
                                       fontFamily: 'Yantramanav',
                                     ),
@@ -199,8 +197,8 @@ class _HomeState extends State<Home> {
                                 ListTile(
                                   title: Text(
                                     "Besar bunga sebesar 5% dan diawasi oleh OJK. "
-                                        "Terima pesan antar. Pastikan lokasi anda tidak jauh dengan lokasi usaha "
-                                        "untuk menghindari kenaikan harga ongkir yang harus anda bayar.",
+                                    "Terima pesan antar. Pastikan lokasi anda tidak jauh dengan lokasi usaha "
+                                    "untuk menghindari kenaikan harga ongkir yang harus anda bayar.",
                                     style: TextStyle(
                                       fontFamily: 'Yantramanav',
                                     ),
@@ -228,11 +226,11 @@ class _HomeState extends State<Home> {
                   backgroundColor: Colors.white,
                   elevation: 30.0,
                   splashColor:
-                  _iconFavorite ? Color(0xffdcdcdc) : Colors.red[700],
+                      _iconFavorite ? Color(0xffdcdcdc) : Colors.red[700],
                   child: Icon(
                     Icons.favorite,
                     color:
-                    _iconFavorite ? Color(0xfffd1616) : Color(0xff9c9c9c),
+                        _iconFavorite ? Color(0xfffd1616) : Color(0xff9c9c9c),
                     size: 25.0,
                   ),
                   onPressed: () {
