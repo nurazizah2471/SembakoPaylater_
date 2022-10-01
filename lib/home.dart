@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Home extends StatefulWidget {
   const Home
@@ -41,7 +42,7 @@ class _HomeState extends State<Home> {
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.topRight,
-                    colors: <Color>[Colors.lightBlue, Colors.cyanAccent],
+                    colors: <Color>[Color(0xff39dbf1), Color(0xffbdeef3)],
                   ),
                 ),
               ),
@@ -167,13 +168,12 @@ class _HomeState extends State<Home> {
                                 ListTile(
                                   title: Text(
                                     "Tersedia: minyak, gula putih, gula merah, "
-                                        "mie instan kemasan, beras, telur, tepung, sagu,bumbu dapur, "
+                                        "mie instan kemasan, beras, telur, tepung, sagu, bumbu dapur, "
                                         "margarin, susu, minyak tanah, gas elpiji, teh, kopi, "
                                         "pop ice, snack, roti, tali rapia, minuman dingin, kerupuk kulit, "
                                         "sirup, mentega, permen, ikan sarden kaleng, es krim, es batu.",
                                     style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w500,
+                                      fontFamily: 'Yantramanav',
                                     ),
                                   ),
                                 ),
@@ -189,8 +189,7 @@ class _HomeState extends State<Home> {
                                         "barang bisa dikembalikan maksimal 3 hari setelah barang diterima. "
                                         "Hanya akun yang telah terverifikasi yang dapat check out barang dalam aplikasi ini.",
                                     style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w500,
+                                      fontFamily: 'Yantramanav',
                                     ),
                                   ),
                                 ),
@@ -200,12 +199,10 @@ class _HomeState extends State<Home> {
                                 ListTile(
                                   title: Text(
                                     "Besar bunga sebesar 5% dan diawasi oleh OJK. "
-                                        "Kontak Pembeli: 988854433322455 "
                                         "Terima pesan antar. Pastikan lokasi anda tidak jauh dengan lokasi usaha "
                                         "untuk menghindari kenaikan harga ongkir yang harus anda bayar.",
                                     style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w500,
+                                      fontFamily: 'Yantramanav',
                                     ),
                                   ),
                                 ),
@@ -229,12 +226,28 @@ class _HomeState extends State<Home> {
                 ),
                 child: FloatingActionButton(
                   backgroundColor: Colors.white,
+                  elevation: 30.0,
+                  splashColor:
+                  _iconFavorite ? Color(0xffdcdcdc) : Colors.red[700],
                   child: Icon(
                     Icons.favorite,
-                    color: _iconFavorite ? Colors.red : Colors.grey[400],
+                    color:
+                    _iconFavorite ? Color(0xfffd1616) : Color(0xff9c9c9c),
                     size: 25.0,
                   ),
-                  onPressed: _toogleFavorite,
+                  onPressed: () {
+                    Fluttertoast.showToast(
+                      msg: _iconFavorite
+                          ? "Batal menyukai sembako Bu Yuli"
+                          : "Kamu menyukai sembako Bu Yuli",
+                      toastLength: Toast.LENGTH_SHORT,
+                      timeInSecForIosWeb: 1,
+                      backgroundColor: Color(0xff7c7c79),
+                      textColor: Colors.white,
+                      fontSize: 14.0,
+                    );
+                    _toogleFavorite();
+                  },
                 ),
               ),
             ],
