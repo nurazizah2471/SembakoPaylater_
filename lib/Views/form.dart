@@ -99,7 +99,7 @@ class _form extends State<form> {
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
                     labelText: "City",
-                    hintText: "Your currents position",
+                    hintText: "Your domicilie's city",
                     border: OutlineInputBorder(),
                     prefixIcon: Icon(Icons.location_city),
                   ),
