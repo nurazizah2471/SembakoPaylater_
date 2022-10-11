@@ -48,6 +48,7 @@ class _form extends State<form> {
                   keyboardType: TextInputType.name,
                   decoration: InputDecoration(
                     labelText: "Full Name",
+                    hintText: "Your full name",
                     border: OutlineInputBorder(),
                     prefixIcon: Icon(Icons.account_circle),
                   ),
@@ -64,6 +65,7 @@ class _form extends State<form> {
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
                     labelText: "Email Address",
+                    hintText: "Your active email address",
                     border: OutlineInputBorder(),
                     prefixIcon: Icon(Icons.email),
                   ),
@@ -80,6 +82,7 @@ class _form extends State<form> {
                   keyboardType: TextInputType.phone,
                   decoration: InputDecoration(
                     labelText: "Phone Number",
+                    hintText: "Your phone number",
                     border: OutlineInputBorder(),
                     prefixIcon: Icon(Icons.phone_android),
                   ),
@@ -96,6 +99,7 @@ class _form extends State<form> {
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
                     labelText: "City",
+                    hintText: "Your currents position",
                     border: OutlineInputBorder(),
                     prefixIcon: Icon(Icons.location_city),
                   ),
