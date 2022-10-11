@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+part of 'pages.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key, required this.title});
@@ -245,6 +244,26 @@ class _HomeState extends State<Home> {
                       fontSize: 14.0,
                     );
                     _toogleFavorite();
+                  },
+                ),
+              ),
+              Container(
+                alignment: Alignment.bottomRight,
+                margin: EdgeInsets.only(
+                  bottom: 25.0,
+                  right: 25.0,
+                ),
+                child: FloatingActionButton.extended(
+                  label: const Text(
+                    "Book Now",
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  elevation: 30.0,
+                  onPressed: () {
+                    Navigator.pushNamed(context, form.routeName);
                   },
                 ),
               ),

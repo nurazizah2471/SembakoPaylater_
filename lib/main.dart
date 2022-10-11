@@ -1,5 +1,5 @@
+import 'package:sembako_paylater/Views/pages.dart';
 import 'package:flutter/material.dart';
-import 'package:sembako_paylater/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +12,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Apps',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(title: 'Mission 1'),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Home(title: 'Mission 1'),
+        form.routeName: (context) => form(title: 'Booking Form'),
+      },
     );
   }
 }
